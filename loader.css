@@ -1,0 +1,55 @@
+.mainLoader{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:40%;
+    left: 40%;
+
+}
+.loader{
+    width: 110px;
+    height:110px;
+    border-left: 4px solid #38ff8e;
+    border-radius: 50%;
+    position: absolute;
+    animation : loaderAnimation 0.9s linear infinite
+}
+.middle-loader{
+    width: 70px;
+    height:70px;
+    border-right: 4px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top:25px;
+    left:25px;
+    animation : loaderAnimationOps 0.9s linear infinite
+}
+.inner-loader{
+    width: 30px;
+    height:30px;
+    border-top: 4px solid blue;
+    border-radius: 50%;
+    position: absolute;
+    top:40px;
+    left:40px;
+    animation : loaderAnimation 0.9s linear infinite
+}
+@keyframes loaderAnimation{
+    0%  {
+        transform: rotate3d(10, 20, 0, 0deg)
+    }
+    50% {transform: rotate(180deg)}
+    100%{transform: rotate(360deg)}
+}
+@keyframes loaderAnimationOps{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
