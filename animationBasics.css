@@ -1,0 +1,74 @@
+.flexbox{
+    margin-top: 2px;
+    width: 100px;
+    height:100px;
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    border-radius:16px;
+    animation: slider 2s linear running;
+    transform: translate(200px,0)
+ 
+}
+.gridBox{
+    margin-top: 2px;
+    background-color: green;
+    height: 100px ;
+    width: 100px;
+    border-radius: 16px;
+    display: grid;
+    text-align: center;
+    align-items: center; 
+    color: white;   
+    animation: slider 2s ease-out running;
+    transform: translate(200px,0)
+}
+.gridBox-2{
+    margin-top: 2px;
+    background-color: yellowgreen;
+    height: 100px ;
+    width: 100px;
+    border-radius: 16px;
+    display: grid;
+    text-align: center;
+    align-items: center; 
+    color: black;   
+    animation: slider 2s ease-in running;
+    transform: translate(200px,0)
+}
+.gridBox-3{
+    margin-top: 2px;
+    background-color: rebeccapurple;
+    height: 100px ;
+    width: 100px;
+    border-radius: 16px;
+    display: grid;
+    text-align: center;
+    align-items: center; 
+    color: white;   
+    animation: slider 2s ease-in-out running;
+    transform: translate(200px,0)
+}
+.gridBox-4{
+    margin-top: 2px;
+    background-color: rgb(39, 3, 74);
+    height: 100px ;
+    width: 100px;
+    border-radius: 16px;
+    display: grid;
+    text-align: center;
+    align-items: center; 
+    color: white;   
+    animation: slider 2s cubic-bezier(1, 1, 1, 1) running;
+    transform: translate(200px,0)
+}
+
+@keyframes slider {
+    0% {
+        transform: translate(0,0);
+    }
+    50%{transform: translate(100px,0px) }
+    100%{transform: translate(200px,0px) ;
+    }
+}
